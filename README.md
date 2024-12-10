@@ -12,7 +12,7 @@ Esta é uma API simples para gerenciar produtos, construída com Flask e Postgre
 
 1. Clone o repositório:
     ```bash
-    git clone https://github.com/seu-usuario/seu-repositorio.git
+    git clone git@github.com:p-ortilho/api-flask-postgres.git
     cd seu-repositorio
     ```
 
