@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 # GET /produtos
 @app.route('/produtos', methods=['GET'])
-def pessoas():
+def produto():
     conexao = DataBaseConexao()
 
     try:
@@ -30,7 +30,7 @@ def pessoas():
 
 # GET /produtos/produto/id
 @app.route('/produtos/produto/<int:id>', methods=['GET'])
-def pessoas_id(id):
+def produto_id(id):
     conexao = DataBaseConexao()
     try:
         resultado = conexao.cursor.execute("SELECT * FROM produtos WHERE id = %s;", (id,))
@@ -53,7 +53,7 @@ def pessoas_id(id):
 
 # POST /produtos/novo-produto
 @app.route('/novo-produto', methods=['POST'])
-def nova_pessoa():
+def novo_produto():
     produto = request.json
     conexao = DataBaseConexao()
 		
